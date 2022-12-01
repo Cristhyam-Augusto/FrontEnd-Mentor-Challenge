@@ -1,0 +1,183 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  border-radius: 6%;
+  background: rgb(35, 42, 52);
+  background: linear-gradient(
+    180deg,
+    rgba(35, 42, 52, 1) 8%,
+    rgba(23, 30, 40, 1) 63%
+  );
+}
+
+.totank {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+  border-radius: 6%;
+  background: rgb(35, 42, 52);
+  background: linear-gradient(
+    180deg,
+    rgba(35, 42, 52, 1) 8%,
+    rgba(23, 30, 40, 1) 63%
+  );
+}
+
+.star {
+  display: block;
+  height: 35px;
+  width: 35px;
+  line-height: 30px;
+  border-radius: 30px;
+  background-color: #262f38;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.star svg {
+  transform: scale(0.7);
+}
+
+.main-container h1,
+.totank h1 {
+  font-family: Overpass;
+  font-weight: 700;
+  font-size: 20px;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 13px;
+}
+
+.main-container p,
+.totank p {
+  font-family: Overpass;
+  word-wrap: break-word;
+  font-weight: 400;
+  font-size: 12px;
+  color: sl(217, 12%, 63%);
+  color: hsl(217, 12%, 63%);
+}
+
+.number-select ol {
+  display: flex;
+}
+
+.number-select ol li {
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 30px;
+  background-color: #262f38;
+  color: hsl(217, 12%, 63%);
+  text-align: center;
+  font-size: 1em;
+  margin: 20px 15px 10px 0px;
+  cursor: pointer;
+}
+
+.number-select ol li:nth-child(5) {
+  margin: 20px 0px 30px 0px;
+}
+
+.number-select ol li:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.main-container input {
+  font-family: Overpass;
+  letter-spacing: 2px;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  width: 260px;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 15px 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.main-container input:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.button_select {
+  background-color: aliceblue !important;
+}
+
+.rate-value {
+  color: #a76534;
+  margin: 20px;
+  padding: 5px 15px;
+  font-size: 13px;
+  border-radius: 15px;
+  background-color: #262f38;
+}
+
+.totank picture {
+  margin-top: 15px;
+}
+
+.totank p {
+  margin-bottom: 20px;
+}
+
+.display-none {
+  display: none;
+}

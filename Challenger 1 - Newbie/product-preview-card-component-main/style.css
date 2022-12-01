@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mainImg {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px 0px 0px 10px;
+  object-fit: cover;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 600px;
+  max-height: 600px;
+  margin: auto;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+
+.apresentacao {
+  padding: 30px;
+}
+
+.apresentacao h1 {
+  font-family: Fraunces;
+  font-weight: 700;
+  line-height: 90%;
+}
+
+.apresentacao p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  padding-bottom: 15px;
+  color: hsl(228, 12%, 48%);
+}
+
+.perfum {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 4px;
+}
+
+.preco {
+  display: flex;
+  font-size: 35px;
+  color: hsl(158, 36%, 37%);
+  font-weight: bold;
+  align-items: center;
+  padding-bottom: 25px;
+  font-family: Fraunces;
+  font-weight: 700;
+}
+
+.preco span {
+  padding-left: 20px;
+  font-size: 12px;
+  color: hsl(228, 12%, 48%);
+  font-weight: bold;
+  text-decoration: line-through;
+  font-family: Fraunces;
+  font-weight: 500;
+}
+
+.btn {
+  background-color: hsl(158, 36%, 37%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 16px 32px;
+  width: 100%;
+  border-radius: 0.625rem;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn img {
+  margin-right: 0.5rem;
+}
+
+.btn:hover {
+  background: hsl(159, 78%, 13%);
+}
+
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    max-height: 700px;
+  }
+  .mainImg {
+    width: 350px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .apresentacao {
+    padding: 18px 30px 10px 30px;
+  }
+  .apresentacao h1 {
+    line-height: 100%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .apresentacao p {
+    margin-bottom: -5px;
+  }
+  .preco {
+    margin-bottom: -10px;
+  }
+  .btn {
+    padding: 12px 32px;
+  }
+}
