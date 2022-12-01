@@ -48,7 +48,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 350px;
   padding: 20px;
   border-radius: 6%;
   background: rgb(35, 42, 52);
@@ -79,14 +79,14 @@ img {
 
 .star {
   display: block;
-  height: 35px;
-  width: 35px;
-  line-height: 30px;
+  height: 45px;
+  width: 45px;
+  line-height: 40px;
   border-radius: 30px;
   background-color: #262f38;
   text-align: center;
   font-size: 2em;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .star svg {
@@ -97,7 +97,7 @@ img {
 .totank h1 {
   font-family: Overpass;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 23px;
   color: hsl(0, 0%, 100%);
   margin-bottom: 13px;
 }
@@ -108,6 +108,8 @@ img {
   word-wrap: break-word;
   font-weight: 400;
   font-size: 12px;
+  width: 280px;
+  line-height: 20px;
   color: sl(217, 12%, 63%);
   color: hsl(217, 12%, 63%);
 }
@@ -126,7 +128,7 @@ img {
   color: hsl(217, 12%, 63%);
   text-align: center;
   font-size: 1em;
-  margin: 20px 15px 10px 0px;
+  margin: 20px 20px 10px 0px;
   cursor: pointer;
 }
 
@@ -144,8 +146,9 @@ img {
   letter-spacing: 2px;
   background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
-  width: 260px;
+  width: 290px;
   border: none;
+  margin-bottom: 10px;
   text-transform: uppercase;
   padding: 10px 15px 10px 15px;
   border-radius: 30px;
@@ -165,7 +168,7 @@ img {
   color: #a76534;
   margin: 20px;
   padding: 5px 15px;
-  font-size: 13px;
+  font-size: 16px;
   border-radius: 15px;
   background-color: #262f38;
 }
