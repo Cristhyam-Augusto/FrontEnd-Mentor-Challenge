@@ -45,7 +45,7 @@ body {
 
 main {
   background-color: hsl(0, 0%, 100%);
-  width: 270px;
+  width: 320px;
   border-radius: 17px;
   padding: 15px;
   display: flex;
@@ -56,7 +56,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 17px;
+  gap: 20px;
   text-align: center;
 }
 
@@ -66,13 +66,14 @@ main {
 }
 
 .container h1 {
-  font-size: 20px;
+  font-size: 22px;
   font-family: Outfit;
   font-weight: 700;
 }
 
 .container p {
-  font-size: 14px;
+  font-size: 15px;
+  width: 250px;
   color: #9399a5;
   padding-bottom: 10px;
   font-family: Outfit;
