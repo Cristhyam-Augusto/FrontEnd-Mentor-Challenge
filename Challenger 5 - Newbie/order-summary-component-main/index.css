@@ -97,9 +97,6 @@ body {
   padding: 1.6rem;
 }
 
-.price-info img {
-}
-
 .price-info a {
   font-weight: 900;
   color: var(--bg-button);
@@ -156,4 +153,33 @@ body {
 
 .btn-cancel:hover {
   color: var(--h1-card-text);
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-image: none;
+  }
+  .container {
+    width: 25rem;
+  }
+  .price-info {
+    padding: 1.2rem;
+    font-size: 0.8rem;
+  }
+  .annual-plan span:nth-of-type(1) {
+    font-size: 0.9rem;
+  }
+
+  .annual-plan span:nth-of-type(2) {
+    font-size: 0.9rem;
+  }
+
+  .btn-payment {
+    padding: 15px 5.1rem;
+    font-size: 1rem;
+  }
+
+  .btn-cancel {
+    font-size: 0.9rem;
+  }
 }
