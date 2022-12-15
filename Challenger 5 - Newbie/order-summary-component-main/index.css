@@ -1,0 +1,159 @@
+:root {
+  box-sizing: border-box;
+  --bg-page: hsl(225, 100%, 94%);
+  --bg-button: hsl(245, 75%, 52%);
+  --bg-card: #fff;
+  --p-card-text: hsl(224, 23%, 55%);
+  --h1-card-text: hsl(223, 47%, 23%);
+  --annual-plan-card: hsl(225, 100%, 98%);
+  --mouse-hover-bg: #c7c3f4;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: "Red Hat Display";
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--bg-page);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 28rem;
+  border-radius: 0.9rem;
+  background-color: var(--bg-card);
+}
+
+.container img:first-of-type {
+  border-radius: 0.9rem 0.9rem 0 0;
+}
+
+.secundary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 1.5rem;
+}
+
+.secundary-container h1 {
+  font-weight: 900;
+  font-size: 1.7rem;
+  color: var(--h1-card-text);
+  margin-top: 1.5625rem;
+}
+
+.secundary-container p {
+  text-align: center;
+  color: var(--p-card-text);
+  font-size: 14px;
+  font-weight: 700;
+  width: 17rem;
+  line-height: 1.4rem;
+}
+
+.price-info {
+  display: flex;
+  align-items: center;
+  background-color: var(--annual-plan-card);
+  border-radius: 0.8rem;
+  gap: 1rem;
+  padding: 1.6rem;
+}
+
+.price-info img {
+}
+
+.price-info a {
+  font-weight: 900;
+  color: var(--bg-button);
+  font-size: 0.8rem;
+  margin-left: 4.5rem;
+  transition: 0.5s;
+}
+
+.price-info a:hover {
+  color: var(--mouse-hover-bg);
+  text-decoration: none;
+}
+
+.annual-plan {
+  display: flex;
+  flex-direction: column;
+}
+
+.annual-plan span:nth-of-type(1) {
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.annual-plan span:nth-of-type(2) {
+  font-weight: 500;
+  color: var(--p-card-text);
+  font-size: 1rem;
+}
+
+.btn-payment {
+  padding: 15px 5.625rem;
+  border-radius: 10px;
+  border-style: none;
+  background-color: var(--bg-button);
+  color: var(--bg-card);
+  font-weight: bold;
+  font-size: 1.0625rem;
+  box-shadow: 2px 14px 30px #c7c3f4;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn-payment:hover {
+  background-color: var(--mouse-hover-bg);
+}
+
+.btn-cancel {
+  text-decoration: none;
+  color: var(--p-card-text);
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  transition: 0.5s;
+}
+
+.btn-cancel:hover {
+  color: var(--h1-card-text);
+}
