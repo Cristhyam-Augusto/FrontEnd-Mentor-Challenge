@@ -1,0 +1,179 @@
+:root {
+  box-sizing: border-box;
+  --bg-page: hsl(217, 54%, 11%);
+  --bg-card: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --h1-card-text: hsl(0, 0%, 100%);
+  --eth-color: hsl(178, 100%, 50%);
+  --p-card-text: hsl(215, 51%, 70%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--bg-page);
+}
+
+.container {
+  width: 22rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 15px;
+  gap: 20px;
+  background-color: var(--bg-card);
+  position: relative;
+}
+
+.eth-img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.hover-img {
+  position: absolute;
+  bottom: 65%;
+  left: 44%;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.bg-img-decoration {
+  position: absolute;
+  background-color: var(--eth-color);
+  width: 310px;
+  height: 310px;
+  border-radius: 10px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.bg-img-decoration:hover + .hover-img {
+  opacity: 100%;
+}
+
+.bg-img-decoration:hover {
+  opacity: 60%;
+}
+
+.container h1 {
+  font-family: Outfit;
+  font-weight: 600;
+  font-size: 1.4375rem;
+  color: var(--h1-card-text);
+  cursor: pointer;
+}
+
+.container h1:hover {
+  color: var(--eth-color);
+}
+
+.container p {
+  font-family: Outfit;
+  font-weight: 300;
+  font-size: 1.125rem;
+  color: var(--p-card-text);
+}
+
+.etherium-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.etherium-price div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.etherium-price div:nth-of-type(1) {
+  color: var(--eth-color);
+  font-family: Outfit;
+  font-weight: 400;
+}
+
+.etherium-price div:nth-of-type(2) {
+  color: var(--p-card-text);
+  font-family: Outfit;
+  font-weight: 300;
+}
+
+.etherium-price div span img {
+  margin-top: 5px;
+}
+
+.line {
+  width: 19.5rem;
+  height: 1px;
+  background-color: var(--line);
+}
+
+.creater {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 0.84rem;
+}
+
+.creater img {
+  width: 2rem;
+  border: 1px solid var(--h1-card-text);
+  border-radius: 50%;
+}
+
+.creater span {
+  font-family: Outfit;
+  font-weight: 300;
+  color: var(--p-card-text);
+}
+
+.creater span .creater-decoration {
+  color: var(--h1-card-text);
+}
+
+.creater span .creater-decoration:hover {
+  color: var(--eth-color);
+  cursor: pointer;
+}

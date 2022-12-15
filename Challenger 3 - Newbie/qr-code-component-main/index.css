@@ -39,7 +39,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
   height: 100vh;
 }
 
@@ -61,19 +60,19 @@ main {
 }
 
 .container img {
-  width: 400px;
+  width: 100%;
   border-radius: 10px;
 }
 
 .container h1 {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-family: Outfit;
   font-weight: 700;
 }
 
 .container p {
-  font-size: 15px;
-  width: 250px;
+  font-size: 0.9375rem;
+  width: 15.625rem;
   color: #9399a5;
   padding-bottom: 10px;
   font-family: Outfit;
