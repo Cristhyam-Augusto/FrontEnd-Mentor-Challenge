@@ -55,7 +55,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  width: 28rem;
+  max-width: 28rem;
   border-radius: 0.9rem;
   background-color: var(--bg-card);
 }
@@ -160,7 +160,7 @@ body {
     background-image: none;
   }
   .container {
-    width: 25rem;
+    width: 80%;
   }
   .price-info {
     padding: 1.2rem;
