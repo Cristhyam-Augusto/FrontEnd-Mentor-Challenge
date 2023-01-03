@@ -1,0 +1,114 @@
+:root {
+  --bg-page: hsl(233, 47%, 7%);
+  --bg-card: hsl(244, 38%, 16%);
+  --bg-accets: hsl(277, 64%, 61%);
+  --h1: hsl(0, 0%, 100%);
+  --p: hsla(0, 0%, 100%, 0.6);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: "Red Hat Display";
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  line-height: 0;
+}
+
+body {
+  background-color: var(--bg-page);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Inter;
+}
+
+.container {
+  display: flex;
+  border-radius: 8px;
+  background-color: var(--bg-card);
+}
+
+.contents-container {
+  padding: 4rem 4rem 0rem 4rem;
+}
+
+.contents-container h1,
+span {
+  font-family: Inter;
+  font-size: 2.5rem;
+  font-weight: 700;
+  max-width: 28rem;
+  line-height: 2.5rem;
+  color: var(--h1);
+  margin-bottom: 1.5rem;
+}
+
+.contents-container h1 span {
+  color: var(--bg-accets);
+}
+
+.contents-container p {
+  font-size: 0.9rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  max-width: 22rem;
+  line-height: 1.7rem;
+  color: var(--p);
+  margin-bottom: 4.5rem;
+}
+
+.statistics-container {
+  display: flex;
+  gap: 4rem;
+}
+
+.statistics h2 {
+  color: var(--h1);
+  font-family: Inter;
+  font-weight: bold;
+}
+
+.statistics p {
+  margin-bottom: 0 !important;
+  text-transform: uppercase;
+}
+
+.hero-image {
+  background: var(--bg-accets);
+  border-radius: 0 8px 8px 0;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.8;
+}

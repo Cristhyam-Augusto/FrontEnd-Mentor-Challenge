@@ -183,3 +183,244 @@ body {
     font-size: 0.9rem;
   }
 }
+
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lexend+Deca&display=swap);
+:root {
+  --p-purple: rgb(183, 75, 255);
+  --p-white: rgb(246, 234, 248);
+  --n-dk-purple: hsla(246, 38%, 16%, 1);
+  --n-gray: rgb(159, 158, 182);
+  --n-bg: hsla(233, 46%, 7%, 1);
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  line-height: 0;
+}
+body {
+  font-family: Inter, sans-serif;
+  background: linear-gradient(180deg, #351544 0, #100020 100%);
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 62.5rem;
+  overflow: hidden;
+  border-radius: 14px;
+  gap: 2.5rem;
+  padding-left: 3.75rem;
+  margin: 32px;
+  box-shadow: 0.75rem 0.75rem 12.5rem 1.25rem rgb(203 12 153 / 22%);
+  background: linear-gradient(
+    to top,
+    hsla(246, 38%, 16%, 0.3) 20%,
+    rgb(70, 39, 98, 0.5) 90%
+  );
+  transition: all ease 0.5s;
+}
+main:hover {
+  box-shadow: 0.75rem 0.75rem 12.5rem 1.25rem rgb(203 12 153 / 40%);
+  transform: scale(1.02);
+  transition: all ease 0.5s;
+}
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 14px 14px 0;
+  mix-blend-mode: multiply;
+  opacity: 0.8;
+  transition: ease-in-out 1s;
+}
+.hero-image {
+  background: linear-gradient(320deg, #ff61f3 0, #b86ffb 100%);
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  column-gap: 6.25rem;
+  row-gap: 1rem;
+  padding-block: 1.25rem;
+}
+.highlights {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2.5rem;
+}
+.hero-text p,
+h1 {
+  max-width: 25rem;
+}
+h2 {
+  color: var(--p-white);
+}
+h1,
+h2,
+span {
+  font-size: 34px;
+  font-weight: 700;
+}
+h1 {
+  background: linear-gradient(100deg, #fbf9fb -12.67%, #c7a6c8 105.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+span {
+  background-image: linear-gradient(
+    to right,
+    #af5ec3,
+    #ef45b4,
+    #fa747d,
+    #f7a0cf,
+    #ef45b4,
+    #af5ec3
+  );
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: move 5s linear infinite;
+  animation-delay: 5s;
+}
+@keyframes move {
+  to {
+    background-position: 300% center;
+  }
+}
+.highlights h2 {
+  font-size: 28.8px;
+  font-weight: 700;
+  padding-bottom: 8px;
+  background-image: linear-gradient(
+    to right,
+    #af5ec3,
+    #ef45b4,
+    #fa747d,
+    #f7a0cf,
+    #ef45b4,
+    #af5ec3
+  );
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: move 5s linear infinite;
+  animation-delay: 5s;
+}
+@keyframes move {
+  to {
+    background-position: 300% center;
+  }
+}
+.hero-text p,
+.highlights p {
+  font-weight: 500;
+  color: var(--n-gray);
+}
+.hero-text p {
+  font-size: 15.2px;
+}
+.hero-text > p {
+  line-height: 1.75;
+}
+.highlights p {
+  font-size: 12.8px;
+}
+.all-caps {
+  text-transform: uppercase;
+}
+.highlights p {
+  font-family: "Lexend Deca", sans-serif;
+  letter-spacing: 0.0875rem;
+}
+@media (max-width: 51.25rem) {
+  h1,
+  span {
+    font-size: 24px;
+  }
+  .hero-text p {
+    font-size: 12.8px;
+  }
+  .highlights h2 {
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
+  .highlights {
+    gap: 1.25rem;
+  }
+  .highlights p {
+    font-size: 11.2px;
+    padding-bottom: 8px;
+  }
+}
+@media (max-width: 38.75rem) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 0;
+    gap: 1.25rem;
+  }
+  .hero-text {
+    display: flex;
+    padding-inline: 2.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  h1,
+  span {
+    font-size: 28.8px;
+    padding-bottom: 1.25rem;
+  }
+  .hero-text p {
+    font-size: 16px;
+    padding-bottom: 1.25rem;
+  }
+  .highlights {
+    flex-direction: column;
+  }
+  .highlights h2 {
+    font-size: 22.4px;
+    padding-bottom: 8px;
+  }
+  .highlights p {
+    font-size: 12.8px;
+  }
+  .hero-image img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 14px 14px 0 0;
+  }
+}
+.highlights,
+h1,
+main,
+p,
+span {
+  -webkit-animation: slideIn 1s ease-in;
+  animation: slideIn 1s ease-out;
+}
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(-1.25rem);
+    transform: translateX(-1.25rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
