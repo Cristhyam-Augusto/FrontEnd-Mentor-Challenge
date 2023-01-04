@@ -68,6 +68,7 @@ span {
   line-height: 2.5rem;
   color: var(--h1);
   margin-bottom: 1.5rem;
+  white-space: normal;
 }
 
 .contents-container h1 span {
@@ -111,4 +112,45 @@ span {
   object-fit: cover;
   mix-blend-mode: multiply;
   opacity: 0.8;
+}
+
+@media screen and (max-width: 1060px) {
+  .contents-container h1,
+  span {
+    font-size: 2rem;
+    max-width: 25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .contents-container {
+    padding: 2rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contents-container h1 {
+    font-size: 2.2rem;
+    max-width: 22rem;
+    margin-top: 1rem;
+  }
+  .contents-container p {
+    line-height: 1.8rem;
+    margin-bottom: 3.5rem;
+    max-width: 22rem;
+    font-size: 1.25rem;
+  }
+  .statistics-container {
+    flex-direction: column;
+    gap: 1.7rem;
+    margin-bottom: 2.5rem;
+  }
 }
