@@ -12,6 +12,7 @@ for (let i = 0; i < ratingValues.length; i++) {
       ratingW.classList.remove("button-select");
     }
     rating.classList.toggle("button-select");
+
     writeRate.innerText = `You selected ${rating.innerText} out of ${ratingValues.length}`;
     btn.addEventListener("click", handToggle);
   });
