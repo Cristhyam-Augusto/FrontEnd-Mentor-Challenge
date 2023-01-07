@@ -32,7 +32,8 @@ ul {
 p {
   color: var(--paragraphs);
 }
-h1 {
+h1,
+h2 {
   color: var(--bg-page);
 }
 button {
@@ -57,7 +58,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--bg-page);
 }
 
@@ -102,9 +103,9 @@ body {
   max-width: 13.5rem;
 }
 
-.container-luxury h1,
-.container-sedans h1,
-.container-suvs h1 {
+.container-luxury h2,
+.container-sedans h2,
+.container-suvs h2 {
   font-size: 2.5rem;
   font-family: "Big Shoulders Display", sans-serif;
   text-transform: uppercase;
