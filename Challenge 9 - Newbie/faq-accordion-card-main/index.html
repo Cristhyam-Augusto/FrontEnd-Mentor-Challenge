@@ -5,19 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
   <main class="main-container">
     <span class="zindex"></span>
-    <div class="illustration-container">
+    <picture class="illustration-container">
       <img src="./images/illustration-woman-online-desktop.svg" alt="" aria-label="true">
-      <img src="./images/illustration-box-desktop.svg" alt="" aria-label="true">
+      <img class="box" src="./images/illustration-box-desktop.svg" alt="" aria-label="true">
       <img src="./images/bg-pattern-desktop.svg" alt="" aria-label="true">
-      <link rel="stylesheet" href="./style.css">
-    </div>
+      <img src="./images/illustration-woman-online-mobile.svg" alt="" aria-label="true">
+      <img src="./images/bg-pattern-mobile.svg" alt="" aria-label="true">
+    </picture>
     <div class="container-FAQ">
       <h1>FAQ</h1>
       <dl>
@@ -31,9 +36,12 @@
         <dd>Yes! Send us a message and well process your request no questions asked.</dd>
         <dt>Do you provide additional support?</dt>
         <dd>Chat and email support is available 24/7. Phone lines are open during normal business hours.</dd>
+
       </dl>
     </div>
   </main>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>

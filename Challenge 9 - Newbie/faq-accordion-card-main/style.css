@@ -4,6 +4,9 @@
     rgba(175, 103, 233, 1) 2%,
     rgba(101, 101, 231, 1) 100%
   );
+  --line-color: hsl(240, 5%, 91%);
+  --dd-color: hsl(240, 6%, 50%);
+  --dt-color: hsl(237, 12%, 33%);
 }
 
 *,
@@ -29,6 +32,13 @@ dd {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  font-family: "Kumbh Sans";
+}
+
+dl,
+dt,
+dd {
+  font-size: 1rem;
 }
 
 ol,
@@ -53,7 +63,6 @@ body {
     rgba(175, 103, 233, 1) 2%,
     rgba(101, 101, 231, 1) 100%
   );
-  position: relative;
 }
 
 .main-container {
@@ -61,13 +70,16 @@ body {
   align-items: center;
   background-color: white;
   border-radius: 1.5rem;
-  padding: 4rem 6rem 4rem 20rem;
+  padding: 4rem 10rem 4rem 20rem;
   gap: 6rem;
   position: relative;
+  -webkit-box-shadow: 0px 43px 45px -24px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 43px 45px -24px rgba(0, 0, 0, 0.43);
+  box-shadow: 0px 43px 45px -24px rgba(0, 0, 0, 0.43);
 }
 
 .zindex {
-  width: 5.2rem;
+  width: 25rem;
   height: 100vh;
   background: rgb(175, 103, 233);
   background: linear-gradient(
@@ -76,14 +88,14 @@ body {
     rgba(101, 101, 231, 1) 100%
   );
   position: absolute;
-  left: -83px;
+  left: -25rem;
   z-index: 3;
 }
 
-.illustration-container img:nth-child(2) {
+.box {
   position: absolute;
-  left: -5.5rem;
-  bottom: 6rem;
+  left: -6rem;
+  bottom: 10rem;
   z-index: 4;
 }
 
@@ -91,11 +103,21 @@ body {
   position: absolute;
   left: -5rem;
   top: 2rem;
-  z-index: 1;
+  z-index: 2;
 }
 
 .illustration-container img:nth-child(3) {
-  max-width: 50px;
+  max-width: 50rem;
+  position: absolute;
+  top: -12rem;
+  left: -27rem;
+  z-index: 1;
+}
+.illustration-container img:nth-child(4) {
+  display: none;
+}
+.illustration-container img:nth-child(5) {
+  display: none;
 }
 
 .container-FAQ {
@@ -103,22 +125,33 @@ body {
   flex-direction: column;
   max-width: 20rem;
   gap: 2rem;
+  margin-left: 4rem;
+}
+
+.container-FAQ > h1 {
+  font-weight: 700;
+  font-family: "Kumbh Sans";
+  font-size: 2.2rem;
 }
 
 .container-FAQ dl dt {
   margin-bottom: 2rem;
-  color: blueviolet;
+  color: var(--dt-color);
   position: relative;
+  cursor: pointer;
 }
 
-.container-FAQ dt::before {
+.container-FAQ dl dt:hover {
+  color: rgb(235, 167, 78);
+}
+
+.container-FAQ dl dt::before {
   content: "";
-  width: 20rem;
+  width: 24rem;
   height: 1px;
-  background-color: gray;
+  background-color: hsl(240, 5%, 91%);
   position: absolute;
   top: 2rem;
-  opacity: 0.3;
 }
 
 .container-FAQ dt::after {
@@ -126,15 +159,94 @@ body {
   width: 30px;
   height: 30px;
   background-image: url(./images/icon-arrow-down.svg);
-  margin-left: 10px;
   top: 9px;
-  right: -5rem;
+  right: -6rem;
   position: absolute;
   display: inline-block;
   background-repeat: no-repeat;
+  cursor: pointer;
+  padding: 0px;
+}
+
+dt.active::after {
+  transform-origin: 5px 5px;
+  transform: rotate(180deg);
+}
+
+dt.active {
+  font-weight: bold;
 }
 
 .container-FAQ dl dd {
   margin-bottom: 1rem;
   display: none;
+  font-size: 0.75rem;
+  color: var(--dd-color);
+}
+
+.active {
+  display: block !important;
+  animation: show-down 0.5s forwards;
+}
+
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-container {
+    flex-direction: column;
+    padding: 4rem 2rem 2rem 2rem;
+  }
+  .container-FAQ dt::after {
+    right: -1rem;
+  }
+  .box {
+    display: none;
+  }
+
+  .illustration-container img:nth-child(1) {
+    display: none;
+  }
+
+  .illustration-container img:nth-child(3) {
+    display: none;
+  }
+
+  .illustration-container img:nth-child(4) {
+    display: block;
+    position: absolute;
+    top: -9rem;
+    right: 2.5rem;
+    width: 20rem;
+  }
+  .illustration-container img:nth-child(5) {
+    display: block;
+    width: 20rem;
+    position: absolute;
+    right: 3rem;
+    top: 1rem;
+  }
+  .zindex {
+    display: none;
+  }
+
+  .container-FAQ > h1 {
+    text-align: center;
+  }
+
+  .container-FAQ {
+    margin: 0;
+  }
+
+  .container-FAQ dl dt::before {
+    width: 20rem;
+  }
 }
