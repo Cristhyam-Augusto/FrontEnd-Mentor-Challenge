@@ -1,0 +1,140 @@
+:root {
+  --bg-color: linear-gradient(
+    180deg,
+    rgba(175, 103, 233, 1) 2%,
+    rgba(101, 101, 231, 1) 100%
+  );
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: "Red Hat Display";
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgb(175, 103, 233);
+  background: linear-gradient(
+    180deg,
+    rgba(175, 103, 233, 1) 2%,
+    rgba(101, 101, 231, 1) 100%
+  );
+  position: relative;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 4rem 6rem 4rem 20rem;
+  gap: 6rem;
+  position: relative;
+}
+
+.zindex {
+  width: 5.2rem;
+  height: 100vh;
+  background: rgb(175, 103, 233);
+  background: linear-gradient(
+    180deg,
+    rgba(175, 103, 233, 1) 2%,
+    rgba(101, 101, 231, 1) 100%
+  );
+  position: absolute;
+  left: -83px;
+  z-index: 3;
+}
+
+.illustration-container img:nth-child(2) {
+  position: absolute;
+  left: -5.5rem;
+  bottom: 6rem;
+  z-index: 4;
+}
+
+.illustration-container img:nth-child(1) {
+  position: absolute;
+  left: -5rem;
+  top: 2rem;
+  z-index: 1;
+}
+
+.illustration-container img:nth-child(3) {
+  max-width: 50px;
+}
+
+.container-FAQ {
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+  gap: 2rem;
+}
+
+.container-FAQ dl dt {
+  margin-bottom: 2rem;
+  color: blueviolet;
+  position: relative;
+}
+
+.container-FAQ dt::before {
+  content: "";
+  width: 20rem;
+  height: 1px;
+  background-color: gray;
+  position: absolute;
+  top: 2rem;
+  opacity: 0.3;
+}
+
+.container-FAQ dt::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url(./images/icon-arrow-down.svg);
+  margin-left: 10px;
+  top: 9px;
+  right: -5rem;
+  position: absolute;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.container-FAQ dl dd {
+  margin-bottom: 1rem;
+  display: none;
+}
