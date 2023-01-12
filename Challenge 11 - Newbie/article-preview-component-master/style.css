@@ -1,0 +1,154 @@
+:root {
+  --bg-card: hsl(217, 19%, 35%);
+  --bg-text: hsl(214, 17%, 51%);
+  --bg-body: hsl(210, 46%, 95%);
+  --bg-p: hsl(212, 23%, 69%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Manrope";
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-body);
+}
+
+.container-main {
+  display: flex;
+  max-width: 45rem;
+  max-height: 18.75rem;
+}
+
+.container-main img {
+  object-fit: cover;
+  max-height: 100%;
+  max-width: 19rem;
+  object-position: left;
+  overflow: hidden;
+}
+
+.container-info {
+  background-color: white;
+  padding: 2.5rem;
+}
+
+.container-info h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--bg-text);
+  max-width: 25rem;
+  margin-bottom: 1rem;
+}
+
+.container-info h2 {
+  font-size: 0.75rem;
+  max-width: 30rem;
+  color: var(--bg-text);
+}
+
+.container-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.container-profile .teste img {
+  max-width: 2.5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.container-info h3 {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+
+.container-info p {
+  color: var(--bg-p);
+}
+
+.teste {
+  display: flex;
+  align-items: center;
+}
+
+.container-info button {
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.none {
+  /* display: none; */
+}
+
+.container-share {
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 5px;
+  background-color: var(--bg-card);
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  justify-content: space-evenly;
+  right: 14rem;
+  top: 20rem;
+}
+
+.container-share p {
+  margin-top: 0.2rem;
+}
+
+.detail {
+  background-color: #48556a;
+  position: absolute;
+  top: 2.875rem;
+  left: 50%;
+  width: 1.25rem;
+  height: 1.25rem;
+  transform: rotate(45deg);
+  top: 2.3rem;
+  left: 6.8rem;
+}
