@@ -181,14 +181,84 @@ body {
 }
 
 @media screen and (max-width: 880px) {
+  .container-profile {
+    position: relative;
+  }
+
   .container-share {
-    top: 0;
-    /* padding: 1rem 8rem; */
+    position: absolute;
+    top: 0.2rem;
+    left: 0rem;
+    padding: 1rem 6rem;
+  }
+
+  .container-share p {
+    margin-right: 2rem;
+    font-size: 1rem;
   }
   .detail {
     display: none;
   }
   .pop-up {
-    position: static;
+    position: static !important;
+  }
+  .pop-up button {
+    z-index: 4;
+    position: relative;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .container-main {
+    display: flex;
+    flex-direction: column;
+    max-height: 33rem;
+    max-width: 22rem;
+  }
+  .container-main > img {
+    border-radius: 0.625rem 0.625rem 0 0;
+  }
+  .container-info {
+    border-radius: 0 0 0.625rem 0.625rem;
+    padding: 2.5rem 2rem 0.9rem 2rem;
+  }
+
+  .container-info h1 {
+    font-size: 1.1rem;
+    max-width: 100%;
+  }
+
+  .container-info h2 {
+    font-size: 0.8rem;
+    max-width: 100%;
+  }
+  .container-profile {
+    margin-top: 2rem;
+  }
+  .container-share {
+    padding: 1.2rem 10rem 1.2rem 1.5rem;
+    min-width: 5rem;
+    top: -0.6rem;
+    left: -2rem;
+    border-radius: 0rem 0rem 0.3rem 0.3rem;
+    display: flex;
+  }
+  .container-share p {
+    margin-right: 0;
+    margin-top: 0;
+    font-size: 0.7rem;
+  }
+  .pop-up button {
+    margin-top: 0;
+  }
+
+  .btn.active {
+    margin-top: 0rem;
+    background-color: var(--bg-text);
+  }
+  .btn.active img {
+    filter: brightness(0) saturate(100%) invert(98%) sepia(1%) saturate(5720%)
+      hue-rotate(183deg) brightness(97%) contrast(101%);
   }
 }
