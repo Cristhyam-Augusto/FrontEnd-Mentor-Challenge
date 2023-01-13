@@ -36,10 +36,10 @@ ul {
   list-style: none;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 body {
   font-family: "Manrope";
@@ -53,34 +53,40 @@ body {
 
 .container-main {
   display: flex;
-  max-width: 45rem;
+  max-width: 48rem;
   max-height: 18.75rem;
+  -webkit-box-shadow: -2px 46px 61px -7px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: -2px 46px 61px -7px rgba(0, 0, 0, 0.09);
+  box-shadow: -2px 46px 61px -7px rgba(0, 0, 0, 0.09);
 }
 
-.container-main img {
+.container-main > img {
   object-fit: cover;
   max-height: 100%;
-  max-width: 19rem;
+  max-width: 100%;
   object-position: left;
   overflow: hidden;
+  border-radius: 0.625rem 0 0 0.625rem;
 }
 
 .container-info {
   background-color: white;
-  padding: 2.5rem;
+  padding: 2.3rem;
+  border-radius: 0 0.625rem 0.625rem 0;
 }
 
 .container-info h1 {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  color: var(--bg-text);
-  max-width: 25rem;
+  color: var(--bg-card);
+  max-width: 50rem;
   margin-bottom: 1rem;
 }
 
 .container-info h2 {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   max-width: 30rem;
+  line-height: 1.25rem;
   color: var(--bg-text);
 }
 
@@ -91,7 +97,7 @@ body {
   margin-top: 1rem;
 }
 
-.container-profile .teste img {
+.container-profile .container-info-profile img {
   max-width: 2.5rem;
   border-radius: 50%;
   margin-right: 1rem;
@@ -106,12 +112,12 @@ body {
   color: var(--bg-p);
 }
 
-.teste {
+.container-info-profile {
   display: flex;
   align-items: center;
 }
 
-.container-info button {
+.pop-up button {
   cursor: pointer;
   border: none;
   padding: 0.5rem;
@@ -119,7 +125,11 @@ body {
 }
 
 .none {
-  /* display: none; */
+  display: none !important;
+}
+
+.pop-up {
+  position: relative !important;
 }
 
 .container-share {
@@ -130,15 +140,17 @@ body {
   font-size: 0.7rem;
   letter-spacing: 5px;
   background-color: var(--bg-card);
-  padding: 0.8rem 2rem;
+  padding: 1rem 2.5rem;
   border-radius: 0.5rem;
   justify-content: space-evenly;
-  right: 14rem;
-  top: 20rem;
+  top: -5rem;
+  left: -6.5rem;
+  animation: fadeIn 0.8s;
 }
 
 .container-share p {
   margin-top: 0.2rem;
+  border-radius: 0 !important;
 }
 
 .detail {
@@ -149,6 +161,34 @@ body {
   width: 1.25rem;
   height: 1.25rem;
   transform: rotate(45deg);
-  top: 2.3rem;
+  top: 2.7rem;
   left: 6.8rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 57em) {
+  .container-share {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .container-share {
+    top: 0;
+    /* padding: 1rem 8rem; */
+  }
+  .detail {
+    display: none;
+  }
+  .pop-up {
+    position: static;
+  }
 }
