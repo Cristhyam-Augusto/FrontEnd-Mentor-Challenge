@@ -140,3 +140,34 @@ body {
   box-shadow: 7px 33px 33px -13px rgba(0, 0, 0, 0.15),
     inset 0rem 0.25rem hsl(34, 97%, 64%);
 }
+
+@media screen and (max-width: 79rem) {
+  body {
+    display: block;
+  }
+
+  .container-main {
+    margin-top: 4rem;
+  }
+
+  .container-main h1 {
+    max-width: 30rem;
+    font-size: 1.8rem;
+  }
+
+  .container-main > p {
+    max-width: 20rem;
+  }
+
+  .container-main img {
+    margin-left: 15rem;
+  }
+
+  .container-secundary {
+    flex-direction: column;
+  }
+
+  .container-secundary div:nth-child(3) {
+    margin-bottom: 4rem;
+  }
+}
