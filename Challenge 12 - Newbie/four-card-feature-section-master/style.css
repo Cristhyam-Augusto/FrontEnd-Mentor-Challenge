@@ -1,3 +1,9 @@
+:root {
+  --bg-color: hsl(0, 0%, 98%);
+  --color-title: hsl(229, 6%, 66%);
+  --color-title2: hsl(234, 12%, 34%);
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -35,4 +41,102 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--bg-color);
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-main h1 {
+  max-width: 30rem;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--color-title);
+}
+
+.container-main span {
+  font-weight: 600;
+  color: var(--color-title2);
+}
+
+.container-main > p {
+  max-width: 35rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: 400;
+  color: var(--color-title);
+}
+
+.container-main img {
+  margin-left: 17rem;
+}
+
+.container-secundary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.container-secundary p {
+  font-weight: 400;
+  font-size: 0.9375rem;
+  max-height: 2rem;
+  margin-bottom: 4rem;
+  max-width: 19rem;
+  color: var(--color-title);
+}
+
+.container-secundary h2 {
+  font-weight: 600;
+  font-size: 1.375rem;
+  color: var(--color-title2);
+  margin-bottom: 0.8rem;
+}
+
+.container-secundary div:nth-child(odd) {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.625rem;
+}
+
+.container-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container-vertical div:nth-child(1) {
+  background-color: white;
+}
+
+.container-vertical div:nth-child(2) {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.625rem;
+}
+
+.container-secundary div:nth-child(1) {
+  box-shadow: 7px 33px 33px -13px rgba(0, 0, 0, 0.15),
+    inset 0rem 0.25rem hsl(180, 62%, 55%);
+}
+
+.container-secundary div:nth-child(3) {
+  box-shadow: 7px 33px 33px -13px rgba(0, 0, 0, 0.15),
+    inset 0rem 0.25rem hsl(212, 86%, 64%);
+}
+
+.container-vertical div:nth-child(1) {
+  box-shadow: 7px 33px 33px -13px rgba(0, 0, 0, 0.15),
+    inset 0rem 0.25rem hsl(0, 78%, 62%);
+}
+
+.container-vertical div:nth-child(2) {
+  box-shadow: 7px 33px 33px -13px rgba(0, 0, 0, 0.15),
+    inset 0rem 0.25rem hsl(34, 97%, 64%);
 }
