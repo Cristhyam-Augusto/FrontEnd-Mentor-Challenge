@@ -1,0 +1,46 @@
+:root {
+  --color-h1: hsl(0, 36%, 70%);
+  --color-p: hsl(0, 93%, 68%);
+  --color-span: hsl(0, 6%, 24%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "Josefin Sans";
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.container-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-img-hero {
+}
