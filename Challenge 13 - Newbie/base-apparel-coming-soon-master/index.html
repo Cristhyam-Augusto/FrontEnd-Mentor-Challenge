@@ -9,27 +9,32 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./scss/main.css">
 </head>
 
 <body>
   <main class="container-main">
     <div class="container-sub">
+      <p>IOi</p>
       <div>
-        <img src="./images/logo.svg" alt="Logo - Base Apparel">
+        <img class="logo" src="./images/logo.svg" alt="Logo - Base Apparel">
       </div>
       <div>
         <h1> <span>We're</span> Coming Soon</h1>
         <p>Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
-        <form action="">
+        <form action="" class="form">
+          <input type="button" id="btn">
+          <img src="./images/icon-arrow.svg" alt="" aria-label="true" class="arrow">
           <input type="email" id="email" name="email" placeholder="Email Address">
         </form>
       </div>
     </div>
-    <div class="container-img-hero">
+    <picture class="container-img-hero">
+      <source srcset="./images/hero-mobile.jpg" media="(max-width:950px)">
       <img src="./images/hero-desktop.jpg" alt="Women">
-    </div>
+    </picture>
+
   </main>
 
 
