@@ -1,1 +1,254 @@
-/*# sourceMappingURL=main.css.map */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "Josefin Sans";
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container-main picture {
+  order: 1;
+}
+
+.logo {
+  max-width: 25%;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  order: 0;
+}
+
+.logo2 {
+  display: none;
+}
+
+.container-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 1.5rem;
+  order: 2;
+  gap: 1rem;
+}
+.container-sub P {
+  font-size: 0.9rem;
+  max-width: 19rem;
+  line-height: 1.3rem;
+  color: hsl(0deg, 36%, 70%);
+}
+.container-sub h1 {
+  font-size: 2.5rem;
+  max-width: 15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: hsl(0deg, 6%, 24%);
+  font-weight: 600;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  opacity: 1;
+  transform: translateY(100px);
+}
+.container-sub span {
+  font-weight: 300;
+  color: hsl(0deg, 36%, 70%);
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 1rem 0 2rem 0;
+}
+.form input[type=button] {
+  position: absolute;
+  right: 0rem;
+  padding: 0.9rem 2rem;
+  border-radius: 1.7rem;
+  border: none;
+  background: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 93%, 68%));
+}
+
+#email {
+  opacity: 0.5;
+  padding: 0.8rem 7rem 0.8rem 1rem;
+  border-radius: 2rem;
+  border-width: 0.015rem;
+  border-color: hsl(0deg, 36%, 70%);
+}
+#email::-moz-placeholder {
+  color: hsl(0deg, 36%, 70%);
+}
+#email:-ms-input-placeholder {
+  color: hsl(0deg, 36%, 70%);
+}
+#email::placeholder {
+  color: hsl(0deg, 36%, 70%);
+}
+
+.arrow {
+  position: absolute;
+  right: 1.6rem;
+}
+
+@media screen and (min-width: 23.75rem) {
+  .container-img-hero {
+    display: flex;
+    max-height: 25rem;
+  }
+  .container-img-hero img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .container-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 0.5rem;
+    order: 2;
+    gap: 0.8rem;
+  }
+  .container-sub P {
+    font-size: 1rem;
+    max-width: 21rem;
+    line-height: 1.3rem;
+    color: hsl(0deg, 36%, 70%);
+  }
+  .container-sub h1 {
+    font-size: 3rem;
+    max-width: 15rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: hsl(0deg, 6%, 24%);
+    font-weight: 600;
+  }
+  .container-sub span {
+    font-weight: 300;
+    color: hsl(0deg, 36%, 70%);
+  }
+  .form {
+    margin: 1rem 0 1rem 0;
+  }
+  .form input[type=button] {
+    padding: 1.1rem 2rem;
+    border-radius: 1.7rem;
+  }
+  #email {
+    padding: 1rem 9rem 1rem 1rem;
+  }
+}
+@media screen and (min-width: 37.5rem) {
+  .container-main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .container-sub {
+    order: 1;
+  }
+  .logo {
+    display: none;
+  }
+  .logo2 {
+    display: block;
+    margin-bottom: 6rem;
+    max-width: 100%;
+  }
+  .container-sub {
+    margin: 0 auto;
+    text-align: start;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 50rem;
+    max-height: 50rem;
+  }
+  .container-sub h1 {
+    font-size: 5rem;
+    letter-spacing: 1.5rem;
+  }
+  .container-sub p {
+    font-size: 1.2rem;
+    max-width: 32rem;
+    line-height: 1.8rem;
+  }
+  #email {
+    opacity: 0.5;
+    max-width: 100%;
+    padding: 1.5rem 19rem 1.5rem 2rem;
+    border-radius: 2rem;
+    border-width: 0.015rem;
+    color: hsl(0deg, 36%, 70%);
+  }
+  #email::-moz-placeholder {
+    color: hsl(0deg, 36%, 70%);
+    font-size: 1.2rem;
+  }
+  #email:-ms-input-placeholder {
+    color: hsl(0deg, 36%, 70%);
+    font-size: 1.2rem;
+  }
+  #email::placeholder {
+    color: hsl(0deg, 36%, 70%);
+    font-size: 1.2rem;
+  }
+  .container-img-hero {
+    min-height: 100vh;
+    justify-content: space-between;
+  }
+  .container-img-hero img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    min-height: 100vh;
+  }
+  .form input[type=button] {
+    position: absolute;
+    right: 0rem;
+    padding: 1.5rem 3.5rem;
+  }
+  .arrow {
+    position: absolute;
+    right: 3rem;
+  }
+}/*# sourceMappingURL=main.css.map */

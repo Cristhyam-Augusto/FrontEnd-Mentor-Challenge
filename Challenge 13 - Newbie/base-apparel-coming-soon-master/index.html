@@ -14,30 +14,39 @@
 
 <body>
   <main class="container-main">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="Logo - Base Apparel">
+    </div>
     <div class="container-sub">
-      <p>IOi</p>
-      <div>
-        <img class="logo" src="./images/logo.svg" alt="Logo - Base Apparel">
+      <div class="logo2">
+        <img src="./images/logo.svg" alt="Logo - Base Apparel">
       </div>
-      <div>
-        <h1> <span>We're</span> Coming Soon</h1>
-        <p>Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our launch deals.</p>
-        <form action="" class="form">
-          <input type="button" id="btn">
-          <img src="./images/icon-arrow.svg" alt="" aria-label="true" class="arrow">
-          <input type="email" id="email" name="email" placeholder="Email Address">
-        </form>
-      </div>
+      <h1> <span>We're</span> Coming Soon</h1>
+      <p>Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      <form action="" class="form">
+        <input type="email" id="email" name="email" placeholder="Email Address">
+        <input type="button" id="btn">
+        <img src="./images/icon-arrow.svg" alt="" aria-label="true" class="arrow">
+      </form>
     </div>
     <picture class="container-img-hero">
-      <source srcset="./images/hero-mobile.jpg" media="(max-width:950px)">
+      <source srcset="./images/hero-mobile.jpg" media="(max-width:375px)">
       <img src="./images/hero-desktop.jpg" alt="Women">
     </picture>
 
+
   </main>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/CSSRulePlugin.min.js" integrity="sha512-TJiE9joKYXjdf5nd0Kkzqt9QOYfp5Hk5W/PaeRmpOd7HYBVdSqpTxJezbfLzJnPrS7HGnalR54WO/hbppgDgkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+  <script>
+    let tl = gsap.timeline({ defaults: { ease: "power4.inOut", duration: 2 } })
+    let flagPoles = CSSRulePlugin.getRule(".card:before")
+
+    tl.to("h1", { 'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y: 0, duration: 1 })
+  </script>
 </body>
 
 </html>
