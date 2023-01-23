@@ -3,3 +3,140 @@ $bg-btn: hsl(154, 59%, 51%);
 $bg-accent: hsl(248, 32%, 49%);
 $color-input-border: hsl(249, 10%, 26%);
 $color-terms: hsl(246, 25%, 77%);
+
+@mixin df {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin dfc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  height: 100vh;
+  @include df;
+  font-family: "Poppins";
+  background-image: url(../images/bg-intro-mobile.png);
+  background-color: $bg-color;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-text {
+  gap: 1rem;
+  @include dfc;
+  h1 {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+  }
+  p {
+    @extend h1;
+    display: flex;
+    font-weight: 400;
+    max-width: 20rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.container-input {
+  @include dfc;
+  gap: 1rem;
+  div:first-child {
+    text-align: center;
+    background-color: $bg-accent;
+    font-size: 0.6rem;
+    padding: 1rem 4rem;
+    max-width: 20rem;
+    border-radius: 10px;
+    h2 {
+      color: white;
+      font-weight: bold;
+      span {
+        font-weight: 400;
+        color: rgb(237, 237, 237);
+      }
+    }
+  }
+  div:nth-child(2) {
+    @include dfc;
+    background-color: white;
+    padding: 2rem;
+    max-width: 20rem;
+    border-radius: 0.625rem;
+    gap: 1rem;
+  }
+  form {
+    @include dfc;
+    gap: 1rem;
+    input {
+      padding: 1rem 5rem 1rem 1rem;
+      font-weight: 700;
+      border-style: $color-terms;
+    }
+    button {
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      background-color: $bg-btn;
+      color: white;
+      padding: 1.2rem 2.1rem;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+  p {
+    max-width: 15rem;
+    text-align: center;
+    color: $color-terms;
+    font-size: 0.7rem;
+    span {
+      color: $bg-color;
+      font-weight: 700;
+    }
+  }
+}
