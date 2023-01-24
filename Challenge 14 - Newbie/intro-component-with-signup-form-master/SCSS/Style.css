@@ -11,7 +11,6 @@ html {
 
 body,
 h1,
-.container-text p,
 h2,
 h3,
 h4,
@@ -45,7 +44,7 @@ body {
 .container-main {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .container-text {
@@ -56,12 +55,15 @@ body {
   justify-content: center;
   margin: 0 auto;
 }
-.container-text h1, .container-text p {
+.container-text h1 {
   color: white;
   font-weight: 700;
   text-align: center;
 }
 .container-text p {
+  color: white;
+  font-weight: 700;
+  text-align: center;
   display: flex;
   font-weight: 400;
   padding: 1rem;
@@ -144,4 +146,76 @@ body {
 .container-input p span {
   color: hsl(0deg, 100%, 74%);
   font-weight: 700;
+}
+
+@media screen and (min-width: 43.75rem) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-text p {
+    max-width: 45rem;
+  }
+  .container-input div:first-child {
+    padding: 1.3rem 6rem;
+    max-width: 35rem;
+    font-size: 0.7rem;
+  }
+  .container-input div:nth-child(2) {
+    padding: 2.7rem;
+    max-width: 35rem;
+  }
+  .container-input form input {
+    padding: 1rem 16rem 1rem 1rem;
+  }
+  .container-input form button {
+    padding: 1rem 8.35rem;
+  }
+  .container-input p {
+    max-width: 35rem;
+  }
+}
+@media screen and (min-width: 84.375rem) {
+  body {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/bg-intro-desktop.png);
+  }
+  .container-main {
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .container-text {
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .container-text p {
+    max-width: 33rem;
+    text-align: start;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    padding: 0px;
+  }
+  .container-text h1 {
+    font-size: 3.1rem;
+    max-width: 35rem;
+    text-align: start;
+    line-height: 3.5rem;
+  }
+  .container-input div:first-child {
+    padding: 1.1rem 7.3rem;
+    max-width: 50rem;
+  }
+  .container-input div:nth-child(2) {
+    padding: 2.5rem 4rem;
+    max-width: 36rem;
+  }
+  .container-input form input {
+    padding: 1.3rem 15rem 1.3rem 2rem;
+    font-size: 1rem;
+  }
+  .container-input form button {
+    padding: 1rem 9.5rem;
+  }
 }/*# sourceMappingURL=Style.css.map */

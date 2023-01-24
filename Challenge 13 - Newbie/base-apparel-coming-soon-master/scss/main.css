@@ -52,7 +52,7 @@ img {
   justify-content: center;
   order: 0;
   -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-          clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
   opacity: 1;
   transform: translateY(100px);
 }
@@ -60,7 +60,7 @@ img {
 .logo2 {
   display: none;
   -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-          clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
   opacity: 1;
   transform: translateY(100px);
 }
@@ -80,7 +80,7 @@ img {
   line-height: 1.3rem;
   color: hsl(0deg, 36%, 70%);
   -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-          clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
   opacity: 0;
   transform: translateY(100px);
 }
@@ -92,7 +92,7 @@ img {
   color: hsl(0deg, 6%, 24%);
   font-weight: 600;
   -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-          clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
   opacity: 0;
   transform: translateY(100px);
 }
@@ -103,7 +103,7 @@ img {
 
 .container-img-hero {
   -webkit-clip-path: polygon(100% 100%, 100% 100%, 100% 0, 100% 0);
-          clip-path: polygon(100% 100%, 100% 100%, 100% 0, 100% 0);
+  clip-path: polygon(100% 100%, 100% 100%, 100% 0, 100% 0);
   opacity: 0;
   filter: blur(10px);
 }
@@ -114,11 +114,11 @@ img {
   position: relative;
   margin: 1rem 0 2rem 0;
   -webkit-clip-path: polygon(100% 100%, 100% 100%, 100% 0, 100% 0);
-          clip-path: polygon(100% 100%, 100% 100%, 100% 0, 100% 0);
+  clip-path: polygon(100% 100%, 100% 100%, 100% 0, 100% 0);
   opacity: 0;
   transition: all ease 0.8s;
 }
-.form input[type=button] {
+.form input[type="button"] {
   position: absolute;
   cursor: pointer;
   right: 0rem;
@@ -127,12 +127,16 @@ img {
   border: none;
   background: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 93%, 68%));
 }
-.form input[type=button]:hover {
-  background: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 100%, 50%));
+.form input[type="button"]:hover {
+  background: linear-gradient(
+    135deg,
+    hsl(0deg, 80%, 86%),
+    hsl(0deg, 100%, 50%)
+  );
   transition: all ease 0.8s;
   opacity: 1;
 }
-.form input[type=button]::before {
+.form input[type="button"]::before {
   content: "";
   background-image: url(../images/icon-error.svg);
   position: absolute;
@@ -184,9 +188,9 @@ img {
   }
   .container-img-hero img {
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     -o-object-position: top;
-       object-position: top;
+    object-position: top;
   }
   .container-sub {
     display: flex;
@@ -218,7 +222,7 @@ img {
   .form {
     margin: 1rem 0 1rem 0;
   }
-  .form input[type=button] {
+  .form input[type="button"] {
     padding: 1.1rem 2rem;
     border-radius: 1.7rem;
   }
@@ -297,12 +301,12 @@ img {
   }
   .container-img-hero img {
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     -o-object-position: center;
-       object-position: center;
+    object-position: center;
     min-height: 100vh;
   }
-  .form input[type=button] {
+  .form input[type="button"] {
     position: absolute;
     right: 0rem;
     padding: 1.6rem 3.5rem;
@@ -311,4 +315,4 @@ img {
     position: absolute;
     right: 3rem;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
