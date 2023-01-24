@@ -70,6 +70,9 @@ body {
   gap: 1rem;
   @include dfc;
   margin: 0 auto;
+  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  opacity: 0;
+  transform: translateY(150px);
   h1 {
     color: white;
     font-weight: 700;
@@ -88,6 +91,9 @@ body {
 
 .container-input {
   @include dfc;
+  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  opacity: 0;
+  transform: translateY(150px);
   gap: 1rem;
   margin-bottom: 4rem;
   div:first-child {
@@ -119,6 +125,9 @@ body {
   form {
     @include dfc;
     gap: 1rem;
+    clip-path: polygon(0% 100%, 0% 100%, 0% 0%, 0% 0%);
+    opacity: 0;
+    transform: translateX(150px);
     input {
       padding: 1rem 5rem 1rem 1rem;
       font-weight: 700;
@@ -141,6 +150,9 @@ body {
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      &:hover {
+        background: hsl(154, 68%, 65%);
+      }
     }
   }
   p {

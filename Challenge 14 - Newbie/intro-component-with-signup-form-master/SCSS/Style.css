@@ -54,6 +54,10 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  opacity: 0;
+  transform: translateY(150px);
 }
 .container-text h1 {
   color: white;
@@ -75,6 +79,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  opacity: 0;
+  transform: translateY(150px);
   gap: 1rem;
   margin-bottom: 4rem;
 }
@@ -113,6 +121,10 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  -webkit-clip-path: polygon(0% 100%, 0% 100%, 0% 0%, 0% 0%);
+          clip-path: polygon(0% 100%, 0% 100%, 0% 0%, 0% 0%);
+  opacity: 0;
+  transform: translateX(150px);
 }
 .container-input form input {
   padding: 1rem 5rem 1rem 1rem;
@@ -136,6 +148,9 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+.container-input form button:hover {
+  background: hsl(154deg, 68%, 65%);
 }
 .container-input p {
   max-width: 15rem;
