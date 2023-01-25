@@ -123,12 +123,15 @@ body {
     box-shadow: 0px 10px 0px -2px rgba(0, 0, 0, 0.15);
   }
   form {
-    @include dfc;
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     clip-path: polygon(0% 100%, 0% 100%, 0% 0%, 0% 0%);
     opacity: 0;
     transform: translateX(150px);
+    gap: 1rem;
     input {
+      position: relative;
       padding: 1rem 5rem 1rem 1rem;
       font-weight: 700;
       border: 0.5px solid $color-terms;
@@ -154,6 +157,9 @@ body {
         background: hsl(154, 68%, 65%);
       }
     }
+    p {
+      display: none;
+    }
   }
   p {
     max-width: 15rem;
@@ -165,6 +171,69 @@ body {
       font-weight: 700;
     }
   }
+}
+
+.erro {
+  background: url(../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+
+.visible {
+  display: inline-block !important;
+  color: $bg-color !important;
+  font-size: 1rem !important;
+}
+
+.logo-name {
+  font-family: "Michroma", sans-serif;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
+.loading-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsl(0deg, 100%, 74%);
+  width: 100vw;
+  height: 100vh;
+
+  gap: 1rem;
+}
+
+.name-container {
+  overflow: hidden;
+  text-align: center;
+  word-break: break-all;
+  max-width: 14rem;
+}
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#svg {
+  height: 150px;
+  width: 150px;
+  stroke: rgb(255, 255, 255);
+  fill-opacity: 0;
+  stroke-width: 12px;
+  stroke-dasharray: 4500;
+  animation: draw 8s ease;
 }
 
 @media screen and (min-width: 43.75rem) {
@@ -200,6 +269,11 @@ body {
       max-width: 35rem;
     }
   }
+}
+
+.name-container {
+  font-size: 1rem;
+  max-width: 27rem;
 }
 
 @media screen and (min-width: 84.375rem) {
@@ -248,4 +322,9 @@ body {
       }
     }
   }
+}
+
+.name-container {
+  font-size: 1.2rem;
+  max-width: 38rem;
 }

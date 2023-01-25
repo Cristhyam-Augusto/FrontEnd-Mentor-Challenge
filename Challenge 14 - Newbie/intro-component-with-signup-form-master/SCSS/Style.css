@@ -118,15 +118,15 @@ body {
 .container-input form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  align-items: flex-end;
   -webkit-clip-path: polygon(0% 100%, 0% 100%, 0% 0%, 0% 0%);
           clip-path: polygon(0% 100%, 0% 100%, 0% 0%, 0% 0%);
   opacity: 0;
   transform: translateX(150px);
+  gap: 1rem;
 }
 .container-input form input {
+  position: relative;
   padding: 1rem 5rem 1rem 1rem;
   font-weight: 700;
   border: 0.5px solid hsl(246deg, 25%, 77%);
@@ -152,6 +152,9 @@ body {
 .container-input form button:hover {
   background: hsl(154deg, 68%, 65%);
 }
+.container-input form p {
+  display: none;
+}
 .container-input p {
   max-width: 15rem;
   text-align: center;
@@ -161,6 +164,78 @@ body {
 .container-input p span {
   color: hsl(0deg, 100%, 74%);
   font-weight: 700;
+}
+
+.erro {
+  background: url(../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+
+.visible {
+  display: inline-block !important;
+  color: hsl(0deg, 100%, 74%) !important;
+  font-size: 1rem !important;
+}
+
+.logo-name {
+  font-family: "Michroma", sans-serif;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
+.loading-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsl(0deg, 100%, 74%);
+  width: 100vw;
+  height: 100vh;
+  gap: 1rem;
+}
+
+.name-container {
+  overflow: hidden;
+  text-align: center;
+  word-break: break-all;
+  max-width: 14rem;
+}
+
+@-webkit-keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+#svg {
+  height: 150px;
+  width: 150px;
+  stroke: rgb(255, 255, 255);
+  fill-opacity: 0;
+  stroke-width: 12px;
+  stroke-dasharray: 4500;
+  -webkit-animation: draw 8s ease;
+          animation: draw 8s ease;
 }
 
 @media screen and (min-width: 43.75rem) {
@@ -191,6 +266,11 @@ body {
     max-width: 35rem;
   }
 }
+.name-container {
+  font-size: 1rem;
+  max-width: 27rem;
+}
+
 @media screen and (min-width: 84.375rem) {
   body {
     display: flex;
@@ -233,4 +313,8 @@ body {
   .container-input form button {
     padding: 1rem 9.5rem;
   }
+}
+.name-container {
+  font-size: 1.2rem;
+  max-width: 38rem;
 }/*# sourceMappingURL=Style.css.map */
