@@ -58,7 +58,6 @@ body {
   font-family: "Poppins";
   background-image: url(../images/bg-intro-mobile.png);
   background-color: $bg-color;
-  overflow: hidden;
 }
 
 .container-main {
@@ -197,6 +196,8 @@ body {
   font-size: 0.9rem;
   letter-spacing: 7px;
   text-transform: uppercase;
+  max-width: auto;
+  // border: 2px solid black;
 }
 
 .loading-page {
@@ -210,7 +211,6 @@ body {
   background-color: hsl(0deg, 100%, 74%);
   width: 100vw;
   height: 100vh;
-
   gap: 1rem;
 }
 
@@ -276,11 +276,9 @@ body {
       max-width: 35rem;
     }
   }
-}
-
-.name-container {
-  font-size: 1rem;
-  max-width: 27rem;
+  .name-container {
+    max-width: 36rem;
+  }
 }
 
 @media screen and (min-width: 84.375rem) {
@@ -328,9 +326,7 @@ body {
       }
     }
   }
-}
-
-.name-container {
-  font-size: 1.2rem;
-  max-width: 38rem;
+  .name-container {
+    max-width: 36rem;
+  }
 }
