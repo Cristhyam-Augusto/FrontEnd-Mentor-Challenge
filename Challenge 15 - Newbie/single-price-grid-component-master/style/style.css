@@ -35,29 +35,145 @@ img {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
   background-color: hsl(204deg, 43%, 93%);
+  font-family: "Karla", sans-serif;
 }
 
 .container-main {
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin: 6.7rem auto;
+  max-width: 21rem;
+  box-shadow: -1px 6px 27px 1px rgba(0, 0, 0, 0.18);
 }
 
 .container-join {
-  background-color: white;
   display: flex;
   flex-direction: column;
+  background-color: white;
   gap: 1rem;
+  padding: 2rem;
+}
+.container-join h1 {
+  color: hsl(179deg, 62%, 43%);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.container-join h3 {
+  font-size: 1rem;
+  color: hsl(71deg, 73%, 54%);
+  font-weight: 700;
+}
+.container-join p {
+  line-height: 1.8rem;
+  font-size: 0.9rem;
+  color: hsl(218deg, 22%, 67%);
 }
 
 .container-price {
+  display: flex;
+  flex-direction: column;
   background-color: hsl(179deg, 62%, 43%);
+  padding: 2rem;
+  gap: 1rem;
+}
+.container-price h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+}
+.container-price p {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  color: white;
+}
+.container-price p b {
+  font-size: 2rem;
+  color: white;
+  opacity: 1;
+}
+.container-price p span {
+  opacity: 0.6;
+}
+.container-price button {
+  background-color: hsl(71deg, 73%, 54%);
+  border: none;
+  padding: 1rem 0;
+  border-radius: 0.4rem;
+  color: white;
+  font-size: 1.1rem;
+  box-shadow: -1px 6px 27px -9px rgba(0, 0, 0, 0.22);
 }
 
 .container-why {
+  display: flex;
+  flex-direction: column;
   background-color: #4abebd;
+  padding: 2rem;
+  gap: 1rem;
+}
+.container-why h2 {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.container-why p {
+  line-height: 1.2rem;
+  color: white;
+  opacity: 0.7;
+  max-width: 13rem;
+}
+
+@media screen and (min-width: 56.25rem) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .container-main {
+    max-width: 40rem;
+    margin: 0;
+  }
+  .container-join {
+    padding: 2.5rem;
+  }
+  .container-join h1 {
+    font-size: 1.4rem;
+  }
+  .container-join h3 {
+    font-size: 1.1rem;
+  }
+  .container-join p {
+    font-size: 1rem;
+  }
+  .container-sub {
+    display: flex;
+    flex-direction: row;
+  }
+  .container-price {
+    padding: 2.5rem;
+  }
+  .container-price h2 {
+    font-size: 1.1rem;
+  }
+  .container-price p {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+  .container-price button {
+    margin-top: 1rem;
+  }
+  .container-why {
+    padding: 2.5rem;
+  }
+  .container-why h2 {
+    margin-bottom: 0.8rem;
+  }
+  .container-why p {
+    font-size: 0.9rem;
+    margin-right: 3.5rem;
+    line-height: 1.3rem;
+  }
 }/*# sourceMappingURL=style.css.map */
