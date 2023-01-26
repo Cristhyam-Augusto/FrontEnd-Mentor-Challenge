@@ -105,7 +105,8 @@ body {
 }
 
 .illustration-image {
-  margin: 4rem 1rem;
+  margin: 3rem 1rem 1rem 1rem;
+  width: 100%;
 }
 
 .social {
@@ -135,16 +136,34 @@ body {
 }
 
 @media screen and (min-width: 34.75rem) {
-  .container-input {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
+  .container-main h1 {
+    font-size: 2.5rem;
   }
-  .container-input input {
-    padding: 1rem 9rem 1rem 2rem;
-    border-radius: 2rem;
+  .container-main p {
+    font-size: 1.2rem;
+  }
+  .container-main .image-logo {
+    margin-top: 2rem;
+    width: 5rem;
+  }
+  .container-input {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container-input input[type=email] {
+    width: 25rem;
+    padding-left: 2rem;
   }
   .container-input .btn {
-    padding: 1rem 3rem;
+    padding: 1rem 3.5rem;
+    font-weight: 400;
   }
+}
+.illustration-image {
+  max-width: 38rem;
+  margin: 4rem auto 2rem auto;
+}
+
+.social {
+  margin: 2rem 0 0 0;
 }/*# sourceMappingURL=style.css.map */

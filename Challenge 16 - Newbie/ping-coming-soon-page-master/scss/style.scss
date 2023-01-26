@@ -90,7 +90,9 @@ body {
 }
 
 .container-input {
-  @include dff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   gap: 1rem;
   margin: 0 2rem;
   input {
@@ -118,7 +120,8 @@ body {
 }
 
 .illustration-image {
-  margin: 4rem 1rem;
+  margin: 3rem 1rem 1rem 1rem;
+  width: 100%;
 }
 
 .social {
@@ -147,16 +150,37 @@ body {
 }
 
 @media screen and (min-width: 34.75rem) {
-  .container-input {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    input {
-      padding: 1rem 9rem 1rem 2rem;
-      border-radius: 2rem;
+  .container-main {
+    h1 {
+      font-size: 2.5rem;
     }
-    .btn {
-      padding: 1rem 3rem;
+    p {
+      font-size: 1.2rem;
+    }
+    .image-logo {
+      margin-top: 2rem;
+      width: 5rem;
     }
   }
+  .container-input {
+    flex-direction: row;
+    justify-content: center;
+    input[type="email"] {
+      width: 25rem;
+      padding-left: 2rem;
+    }
+    .btn {
+      padding: 1rem 3.5rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.illustration-image {
+  max-width: 38rem;
+  margin: 4rem auto 2rem auto;
+}
+
+.social {
+  margin: 2rem 0 0 0;
 }
