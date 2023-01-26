@@ -1,0 +1,150 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem 0;
+  gap: 1rem;
+}
+.container-main h1 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  color: hsl(0deg, 0%, 59%);
+  letter-spacing: 1px;
+}
+.container-main h1 span {
+  color: hsl(209deg, 33%, 12%);
+  font-weight: 700;
+}
+.container-main p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: hsl(209deg, 33%, 12%);
+  margin-bottom: 2rem;
+}
+
+.image-logo {
+  width: 4rem;
+  margin: 0 auto;
+}
+
+.container-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 2rem;
+}
+.container-input input {
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 1px solid hsl(223deg, 87%, 63%);
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+.container-input input::-moz-placeholder {
+  color: hsl(223deg, 87%, 63%);
+}
+.container-input input:-ms-input-placeholder {
+  color: hsl(223deg, 87%, 63%);
+}
+.container-input input::placeholder {
+  color: hsl(223deg, 87%, 63%);
+}
+.container-input .btn {
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: hsl(223deg, 87%, 63%);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  white-space: nowrap;
+  cursor: pointer;
+  text-align: center;
+}
+
+.illustration-image {
+  margin: 4rem 1rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.6875rem;
+}
+.social a {
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 50%;
+  padding: 0.3rem;
+}
+.social a svg {
+  width: 1.5rem;
+  margin-top: 4px;
+  fill: hsl(223deg, 87%, 63%);
+  aspect-ratio: 3/2;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.8rem;
+  color: hsl(0deg, 0%, 59%);
+}
+
+@media screen and (min-width: 34.75rem) {
+  .container-input {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+  .container-input input {
+    padding: 1rem 9rem 1rem 2rem;
+    border-radius: 2rem;
+  }
+  .container-input .btn {
+    padding: 1rem 3rem;
+  }
+}/*# sourceMappingURL=style.css.map */
