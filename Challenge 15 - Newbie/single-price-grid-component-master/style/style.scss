@@ -71,7 +71,7 @@ body {
   flex-direction: column;
   margin: 6.7rem auto;
   max-width: 21rem;
-  box-shadow: -1px 6px 27px 1px rgba(0, 0, 0, 0.18);
+  box-shadow: none;
 }
 
 .container-join {
@@ -79,6 +79,9 @@ body {
   background-color: white;
   gap: 1rem;
   padding: 2rem;
+  opacity: 0;
+  transform: translateY(-150px);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
   h1 {
     @include h-text;
     color: $bg-container-price;
@@ -148,6 +151,64 @@ body {
     opacity: 0.7;
     max-width: 13rem;
   }
+}
+
+.logo-name {
+  font-family: "Michroma", sans-serif;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  max-width: auto;
+}
+
+.container-sub {
+  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  opacity: 0;
+  transform: translateY(150px);
+}
+
+//animation
+.loading-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $bg-container-why;
+  width: 100vw;
+  height: 100vh;
+  gap: 1rem;
+}
+
+.name-container {
+  overflow: hidden;
+  text-align: center;
+  word-break: break-all;
+  max-width: 11rem;
+}
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#svg {
+  height: 150px;
+  width: 150px;
+  stroke: rgb(255, 255, 255);
+  fill-opacity: 0;
+  stroke-width: 12px;
+  stroke-dasharray: 4500;
+  animation: draw 8s ease;
 }
 
 @media screen and (min-width: 56.25rem) {
