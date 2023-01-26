@@ -132,6 +132,12 @@ body {
     color: white;
     font-size: 1.1rem;
     box-shadow: -1px 6px 27px -9px rgba(0, 0, 0, 0.22);
+    transition: 0.4s ease;
+    cursor: pointer;
+    &:hover {
+      transform: translateY(-5px);
+      transition: 0.4s ease;
+    }
   }
 }
 
@@ -190,7 +196,7 @@ body {
   overflow: hidden;
   text-align: center;
   word-break: break-all;
-  max-width: 11rem;
+  max-width: 10.9rem;
 }
 @keyframes draw {
   0% {
