@@ -41,7 +41,6 @@ body {
 .container-main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin: 2rem 0;
   gap: 1rem;
 }
@@ -148,7 +147,6 @@ body {
   }
   .container-input {
     flex-direction: row;
-    justify-content: center;
   }
   .container-input input[type=email] {
     width: 25rem;

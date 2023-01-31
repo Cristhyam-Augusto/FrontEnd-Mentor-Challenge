@@ -45,7 +45,6 @@ body {
 @mixin dff {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 @mixin dfc {
@@ -60,7 +59,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .container-main {
   @include dff;
   margin: 2rem 0;
@@ -164,7 +162,6 @@ body {
   }
   .container-input {
     flex-direction: row;
-    justify-content: center;
     input[type="email"] {
       width: 25rem;
       padding-left: 2rem;
