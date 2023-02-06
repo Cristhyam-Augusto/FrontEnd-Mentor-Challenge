@@ -3,7 +3,7 @@
 ![Frontend Mentor _ Social proof section - Google Chrome 2023-02-05 22-50-42](https://user-images.githubusercontent.com/102738785/216864077-255c919f-ccd7-4862-ad41-f155989d7e27.gif)
 
 ## 📌 Objective
-The project consists of an accordion list, having change events related to it.
+Simple design with HTML and CSS, positioning with flexbox only.
 
 During the project, I improved skills in HTML and CSS.
 ## ⚒️ Technology
