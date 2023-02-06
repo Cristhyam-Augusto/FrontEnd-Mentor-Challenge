@@ -3,7 +3,7 @@
 ![Frontend Mentor _ Article preview component - Google Chrome 2023-02-05 22-54-50](https://user-images.githubusercontent.com/102738785/216864633-041bba51-14dd-4c68-bc12-b8faae34443d.gif)
 
 ## 📌 Objective
-The project consists of an accordion list, having change events related to it.
+Component with button showing a popup.
 
 During the project, I improved skills in HTML, CSS and Javascript
 ## ⚒️ Technology
